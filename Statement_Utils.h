@@ -12,11 +12,11 @@
 #endif
 
 // sfor
-#define su_sfor(count, varname, interval) \
+#define su_sfor(varname, count, interval) \
     for (int varname = 0; varname < (count); varname += interval)
 #ifndef sfor
-    #define sfor(count, varname, interval) \
-    su_sfor(count, varname, interval)
+    #define sfor(varname, count, interval) \
+    su_sfor(varname, count, interval)
 #endif
 
 

@@ -21,13 +21,13 @@ for(int i = 0; i < 5; ++i) {
 ```
 
 #### su_sfor / sfor
-syntax: su_sfor(count, varname, interval)
-syntax: sfor(count, varname, interval)
+syntax: su_sfor(varname, count, interval)
+syntax: sfor(varname, count, interval)
 ```c
-sfor(10, i, 2) {
+sfor(i, 10, 2) {
     printf("%d\n", i);
 }
-su_sfor(10, i, 2) {
+su_sfor(i, 10, 2) {
     printf("%d\n", i);
 }
 // identical to:

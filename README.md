@@ -6,6 +6,7 @@ Small collection of QoL statements such as repeat(count, varname)
 ## General
 #### su_repeat / repeat
 syntax: su_repeat(count, varname)
+
 syntax: repeat(count, varname)
 ```c
 repeat(5, i) {
@@ -22,6 +23,7 @@ for(int i = 0; i < 5; ++i) {
 
 #### su_sfor / sfor
 syntax: su_sfor(varname, count, interval)
+
 syntax: sfor(varname, count, interval)
 ```c
 sfor(i, 10, 2) {
@@ -54,6 +56,7 @@ for(;;) {
 
 #### su_whilever / whilever
 syntax: su_whilever
+
 syntax: whilever
 ```c
 whilever {
@@ -70,10 +73,15 @@ while(1) {
 
 #### su_unless / unless, su_ifnot / ifnot, su_ifn / ifn
 syntax: su_unless(statement)
+
 syntax: unless(statement)
+
 syntax: su_ifnot(statement)
+
 syntax: ifnot(statement)
+
 syntax: su_ifn(statement)
+
 syntax: ifn(statement)
 ```c
 unless(x > 0) {
@@ -87,6 +95,7 @@ if(!(x > 0)) {
 
 #### su_until / until
 syntax: su_until(statement)
+
 syntax: until(statement)
 ```c
 until(x > 0) {
@@ -103,6 +112,7 @@ while(!(x > 0)) {
 
 #### su_when / when
 syntax: su_when(statement)
+
 syntax: when(statement)
 ```c
 when(x > 0) {
@@ -119,6 +129,7 @@ if((x > 0)) {
 
 #### True, False
 syntax: True
+
 syntax: False
 ```c
 int flag = True;   // 1
@@ -127,8 +138,11 @@ int flag2 = False; // 0
 
 #### su_elif / elif, su_elsif / elsif
 syntax: su_elif
+
 syntax: elif
+
 syntax: su_elsif
+
 syntax: elsif
 ```c
 if(x > 0) {
@@ -153,9 +167,13 @@ if(x > 0) {
 #### su_def, su_fn, su_fun, su_func, su_function / function
 syntax: su_def funcname()
 syntax: su_fn funcname()
+
 syntax: su_fun funcname()
+
 syntax: su_func funcname()
+
 syntax: su_function funcname()
+
 syntax: function funcname()
 ```cpp
 function add(int a, int b) {
@@ -170,6 +188,7 @@ auto add(int a, int b) {
 ### C++11+ Only
 #### su_var, su_let
 syntax: su_var varname
+
 syntax: su_let varname
 ```cpp
 su_var x = 5;
